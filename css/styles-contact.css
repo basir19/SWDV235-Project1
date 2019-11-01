@@ -1,0 +1,107 @@
+input[type=text],
+select,
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+div.container {
+    border-radius: 5px;
+    background-color: darkcyan;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.inner-wrapper,
+.inner-wrapper2,
+.inner-wrapper3 {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+article {
+    flex: 1 1;
+    padding: 20px;
+}
+
+aside {
+    flex: 1 1;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+ol {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+@media only screen and (max-width:500px) {
+
+    .inner-wrapper,
+    .inner-wrapper2,
+    .inner-wrapper3 {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /*
+    aside{
+    flex: 1;
+    width: 100%;
+}
+*/
+    article,
+    img,
+    aside {
+        flex: 1;
+        width: 100%;
+    }
+
+    /*
+aside img{
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+}
+*/
+    ol {
+        padding: 20px;
+    }
+}

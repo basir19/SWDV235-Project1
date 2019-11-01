@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/styles-contact.css">
+    <script src="js/product.js" async></script>
+
+</head>
+<!--------------------------->
+
+<body>
+    <header>
+        <div class="logo"><span>Galaxy</span> Drone</div>
+        <label class="toggle" for="toggle">&#9776</label>
+    </header>
+
+    <nav class="nav">
+        <input type="checkbox" id="toggle">
+        <ul class="menu">
+            <li><a href="home.html"><span class="fa fa-home"></span>Home</a></li>
+            <li><a href="undercons.html"><span class="fa fa-users"></span>Forum</a></li>
+            <li><a href="products.html"><span class="fa fa-list"></span>Our Prodcucts</a></li>
+            <li><a href="undercons.html"><span class="fa fa-video"></span>Videos</a></li>
+            <li><a href="contact.aspx"><span class="fa fa-info"></span>Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr />
+
+    <!--------------------------->
+    <section class="inner-wrapper">
+        <article id="fixedWing">
+            <figure>
+                <img src="images/fixedWing.png" alt="Fixed Wing Drone" />
+                <figcaption>Fixed Wing Drone</figcaption>
+            </figure>
+        </article>
+        <aside id="fixedWing2">
+            <ol>
+                <li>Flight Time : 95 Min</li>
+                <li>Flight Range: 80 Miles from ground station</li>
+                <li>Landing Area: 2 Mile x 1 Mile</li>
+                <li>Payload : 6 35 LBs</li>
+                <li>Price : $13000</li>
+            </ol>
+        </aside>
+    </section>
+    <section class="inner-wrapper2">
+        <article id="quadCopter">
+            <ol>
+                <li>Flight Time : 30 Min</li>
+                <li>Flight Range: 8 Miles from ground station</li>
+                <li>Landing Area: 1ft x 1ft</li>
+                <li>Payload : 10 35 LBs</li>
+                <li>Price : $10000</li>
+            </ol>
+        </article>
+        <aside>
+            <figure>
+                <img src="images/quadCopter.png" alt="Quadcopter Drone" />
+                <figcaption>Quadcopter Drone</figcaption>
+            </figure>
+        </aside>
+    </section>
+    <section class="inner-wrapper3">
+        <article>
+            <figure id="fixedWing">
+                <img src="images/vtol.png" alt="VTOL Drone" />
+                <figcaption>VTOL Drone</figcaption>
+            </figure>
+        </article>
+        <aside id="vtol">
+            <ol>
+                <li>Flight Time : 90 Min</li>
+                <li>Flight Range: 80 Miles from ground station</li>
+                <li>Landing Area: 1ft x 1ft</li>
+                <li>Payload : 12 35 LBs</li>
+                <li>Price : $27000</li>
+            </ol>
+        </aside>
+    </section>
+    <form name="productPage" method="post" action="thankyouProduct.php">
+        <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Want to know more about our customized drones? subscribe now and get daily updates. </p>
+
+            <input type="text" id="name" placeholder="Name" name="customer_name" required>
+            <input type="email" id="eMail" placeholder="Email address" name="customer_mail" required>
+            <label>
+                <input type="checkbox" checked="checked" name="customer_subscribe"> Daily Newsletter
+            </label>
+
+            <input type="submit" id="subButton" value="Subscribe">
+        </div>
+    </form>
+
+    <!--------------------------->
+
+    <footer>
+        <hr />
+        <p><span>Galaxy</span> <u>Drone</u> &#8226; Software development class, CWI | Copyright &copy; 2019</p><br>
+
+        <section class="footerIcons">
+            <a href="https://www.plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </section>
+    </footer>
+
+</body>
+</html>
